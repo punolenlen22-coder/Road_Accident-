@@ -50,12 +50,16 @@ except ModuleNotFoundError as exc:
 # PAGE CONFIGURATION
 # ============================================================
 
-st.set_page_config(
-    page_title="RACC | Road Safety Analytics",
-    page_icon="🚦",
-    layout="wide",
-    initial_sidebar_state="expanded",
-)
+def main():
+    st.set_page_config(
+        page_title="RACC Road Safety Analytics",
+        page_icon="🚦",
+        layout="wide"
+    )
+
+    load_css()  # Kini ang nag-connect sa style.css
+
+    st.title("RACC Road Safety Analytics")
 
 
 # ============================================================
